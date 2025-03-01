@@ -24,4 +24,6 @@ RUN mkdir -p $LOG_PATH $FLOWISE_PATH/uploads && chmod -R 777 $LOG_PATH $FLOWISE_
 
 WORKDIR /data
 
+RUN mkdir '/.flowise'
+
 CMD ["npx", "flowise", "start"]
